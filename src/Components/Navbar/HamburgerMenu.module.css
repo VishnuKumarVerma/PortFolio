@@ -1,0 +1,60 @@
+.menuClass {
+  margin: 4vh auto;
+  display: none;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menuClass a svg {
+  font-size: 30px;
+  color: cyan;
+  cursor: pointer;
+}
+
+.menuClass a button {
+  background-color: cadetblue;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  padding: 8px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+@media (max-width: 1025px) {
+  .menuClass {
+    display: none;
+  }
+}
+
+@media (max-width: 769px) {
+  .menuClass {
+    display: inline-block;
+    position: relative;
+    top: -12px;
+  }
+  .menuClass {
+    margin: 2.5vh auto;
+  }
+}
+
+@media (max-width: 426px) {
+
+  .menuClass {
+    display: inline-block;
+    position: relative;
+    top: -19px;
+  }
+  .menuClass {
+    margin: 0vh auto;
+  }
+}

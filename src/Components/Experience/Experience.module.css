@@ -1,0 +1,145 @@
+div.Experience {
+  background-color: rgba(24, 28, 34, 1);
+  padding: 100px 0 150px;
+  /* background: url('../../assets/expBackground.mp4');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  /* height: 200px; */
+}
+
+/* .Experience video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+} */
+
+.Experience .cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Experience .experienceButton {
+  margin: 10px;
+  padding: 10px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.Card {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  margin: 100px 10px 10px 10px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  /* border-top-left-radius: 30%;
+  border-bottom-left-radius: 30%; */
+}
+
+.Image {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+.Overlay {
+  position: absolute;
+  bottom: -200px; /* Initially hide the overlay below the card */
+  left: 0;
+  width: 100%;
+  height: 200px;
+  padding: 20px 30px;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  transition: bottom 0.3s; /* Add transition effect to the bottom property */
+}
+
+.Card:hover .Overlay {
+  bottom: 0; /* Move the overlay up when hovering over the card */
+}
+
+h3 {
+  margin: auto 10px;
+  font-size: 28px;
+  color: rgb(18, 213, 154);
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 25px 0;
+  font-size: 14px;
+}
+
+.Number {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 50px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4298f4;
+  color: #fff;
+  font-weight: bold;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 250%;
+  border-bottom-right-radius: 50%;
+}
+
+
+
+.cardContainer .knowMore {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.cardContainer .knowMore h3 {
+  margin: 0 10px;
+  font-size: 15px;
+}
+
+.knowMore .icon {
+  font-size: 20px;
+  margin: 4px 0 0;
+}
+
+.ModalContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px; /* Adjust the width as desired */
+  height: 200px; /* Adjust the height as desired */
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  z-index: 9999;
+}
+
+.CloseButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  color: #000;
+  font-size: 20px;
+  cursor: pointer;
+}

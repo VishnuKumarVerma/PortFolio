@@ -1,0 +1,78 @@
+.NavbarItems .Row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 30px;
+  color: #fff;
+}
+
+.NavbarItems .Logo {
+  font-size: 30px;
+}
+
+.Row .Links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center
+}
+
+.Links div {
+  text-decoration: none;
+  list-style-type: none;
+  letter-spacing: 1px;
+  margin-left: 50px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.Links div:hover {
+  color: #49c092;
+  scale: 1.1;
+  background-color: #fff;
+  padding: 8px;
+  border-top-left-radius: 20%;
+  border-bottom-left-radius: 20%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.NavbarItems .Button button {
+  background-color: #000;
+  padding: 10px 20px;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #fff;
+  width: 140px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.NavbarItems .Button button:hover {
+  scale: 0.95;
+  background: none;
+  color: #fff;
+}
+
+.hamburgerMenu {
+  display: none;
+}
+
+@media (max-width: 769px) {
+  .NavbarItems .Links {
+    display: none;
+  }
+}
+
+@media (max-width: 769px) {
+  .hamburgerMenu {
+    display: block;
+  }
+}
+
+@media (max-width: 426px) {
+  .Button {
+    display: none;
+  }
+}

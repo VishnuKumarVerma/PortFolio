@@ -1,0 +1,36 @@
+.Services {
+  padding: 100px 10px;
+  background-color: rgba(24, 28, 34, 0.6);
+  position: relative;
+  width: 100%;
+  color: #fff;
+}
+
+.Services .servicesTitle {
+  position: absolute;
+  left: 5%;
+  top: 65px;
+}
+
+.Services h1 {
+  color: #fff;
+  font-size: 50px;
+  margin: 10px 0;
+}
+
+.Services span {
+  color: #49c092;
+}
+
+.Services .ServicesItemsClass {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1026px) {
+  
+}
